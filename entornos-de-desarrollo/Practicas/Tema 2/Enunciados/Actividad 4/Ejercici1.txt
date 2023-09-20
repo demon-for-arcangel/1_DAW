@@ -1,0 +1,33 @@
+package cuentacifrasapp;
+
+import java.util.Scanner;
+public class CuentaCifrasApp {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static <string> void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        String nombre="Luisa";
+        int numero=0;
+        do{
+            System.out.println("Introduce un numero");
+            numero=sc.nextInt();
+        }while(numero<0);
+        int contador=0;
+        for (int i=numero;i>1;i=i/10){
+            //Incrementamos el contador
+            contador++;
+        }
+
+        //Controlamos en el caso de que haya una cifra o mas
+        if (contador==1){
+            System.out.println("El numero "+numero+ " tiene "+contador+" cifra");
+        }else{
+            System.out.println("El numero "+numero+ " tiene "+contador+" cifras");
+        }
+
+    }
+
+}
