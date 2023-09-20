@@ -1,0 +1,29 @@
+.img-left1{
+    position: relative;
+    margin-left: 150px;
+    bottom: 50px;
+    top: 230px;
+    display: inline-block;
+}
+
+.text{
+    position: absolute;
+    top: 250px; left: 650px; 
+    font-size: 22px;   
+}
+
+.precio{
+    text-align: right;
+}
+
+#comprar-ahora{
+    position: absolute;
+    background-color: #00A5B3;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    width: 170px;
+    height: 45px;
+    left: 1340px;
+    bottom: 50px;
+}

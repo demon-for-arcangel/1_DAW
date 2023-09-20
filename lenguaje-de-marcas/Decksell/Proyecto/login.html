@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" media="all"/>
+    <link rel="stylesheet" href="login.css"/>
+    <title>DeckSell</title>
+</head>
+<body>
+    <header>
+        <img src = "Fotos\Logo de la pagina.png" width="150" height="150"/>
+        <img src = "Fotos\Logo.png" width="500" />
+        <a href="login.html"><button class = "button-header1">LOGIN</button></a>
+        <a href="calcular-valor-1.html"><button class = "button-header2">CALCULAR VALOR</button></a>
+        <a href="venta-cartas1.html"><button class = "button-header3">QUIERO VENDER</button></a>
+    </header>
+    <br>
+    <a href = "index.html"><button id="button-atras">ATRÁS</button></a>
+    <div class ="imagen">
+        <img src="Fotos/Icono pantalla login.png" width="300"/>
+    </div>
+    <div class = "formulario">
+        <h1 class = "text-titulo">Crea tu cuenta ahora</h1>
+        <form action = "control_form.php" method = "get">
+            <label for="nombre">Nombre de usuario</label>
+            <input type = "text" name = "nombre" size = "40" maxlength = "100"/>
+            <br><br>
+            <label for="correo">Correo electronico</label>
+            <input type = "email" name = "correo" size = "40" maxlength = "100"/>
+            <br><br>
+            <label for = "contrasenia">Contraseña</label>
+            <input type = "password" name = "constrasenia" size = "40" maxlength = "100"/>
+            <br><br><br>
+            <input type = "reset" name = "restablecer" class = "estilo"/>
+            <button class = "crear-cuenta">CREAR CUENTA</button>
+        </form>
+    </div>
+</body>
+</html>

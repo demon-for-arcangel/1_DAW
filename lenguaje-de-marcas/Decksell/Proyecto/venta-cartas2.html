@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" media="all"/>
+        <link rel="stylesheet" href="style-venta.css"/>
+        <script src="script.js"></script>
+        <title>DeckSell</title>
+    </head>
+    <body>
+        <header>
+            <img src = "Fotos\Logo de la pagina.png" width="150" height="150"/>
+            <img src = "Fotos\Logo.png" width="500" />
+            <a href="login.html"><button class = "button-header1">LOGIN</button></a>
+            <a href="calcular-valor-1.html"><button class = "button-header2">CALCULAR VALOR</button></a>
+            <a href="venta-cartas1.html"><button class = "button-header3">QUIERO VENDER</button></a>
+        </header>
+        <a href = "index.html"><button id="button-atras">ATRÁS</button></a>
+        <h2 id = "titulo">Vende tu carta</h2>
+        <!--Contenedor 1-->
+        <div id="datos">
+            <form action = "control_form.php" method = "get">
+                <label for = "serie" class = "label4">Número de serie</label>
+                <input type = "text" name = "serie" size = "40" maxlength = "100"/>
+                <br><br>
+                <label for = "nombre">Nombre de la carta</label>
+                <input type = "text" name = "nombre" size = "40" maxlength = "100"/>
+                <br><br>
+                <label for = "edicion" class = "label1">Edición o set</label>
+                <input type = "text" name = "edicion" size = "40" maxlength = "100"/>
+                <br><br>
+                <label for = "rareza" class = "label2">Rareza</label>
+                <select name="rareza" class = "Size">
+                    <option value="Comun">Común</option>
+                    <option value="Infrecuente">Infrecuentes</option>
+                    <optgroup label = "Raras">
+                        <option value="RH">Rara Holo</option>
+                        <option value="RHV">Rara Holo Variocolor</option>
+                        <option value="RHE">Rara Holo EX</option>
+                        <option value="RHNX">Rara Holor Niv.X</option>
+                        <option value="RP">Rara Prime</option>
+                        <option value="L">Leyenda</option>
+                        <option value="P">Promo</option>
+                        <option value="RU">Rara Ultra</option>
+                        <option value="RA">Rara Ace</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <label for = "idioma" class = "label2">Idioma</label>
+                <select name="idioma" class = "Size">
+                    <option value="">Español</option>
+                    <option value="">Inglés</option>
+                    <option value="">Japonés</option>
+                </select>
+                <br><br>
+                <label for = "estado" class = "label3">Estado de la carta</label>
+                <input type = "radio" name = "options" class = "radio"> Correcto
+                <input type = "radio" name = "options" class = "radio"> Muy bueno
+                <input type = "radio" name = "options" class = "radio"> Excelente
+            </form>
+        </div>
+        <!--Contenedor 2-->
+        <div id="seleccion">
+            <div id="tipoCarta">
+                <form>
+                    <label for="tipo"></label>
+                    <select name="tipo" class = "Size" onchange="seleccionarTipo(this)">
+                        <option value="YuGiOh">Yu-Gi-Oh</option>
+                        <option value=pokemon">Pokemon</option>
+                    </select>
+                </form>
+            </div>
+            <br><br>
+            <div>
+                <p>Sube aqui una foto del anverso de tu carta</p>
+                <label for = "archivo" class = "subeFoto">Seleccionar archivo</label>
+                <br><br>
+                <input type = "file" name = "archivo" id = "archivoButton" class = "nombre-archivo-oculto"/>    
+            </div>
+            <div id = "botones">
+                <input type = "reset" name = "restablecer" class = "estilo"/>
+                <br><br>
+                <button>VENDER AHORA</button>
+            </div>    
+        </div>
+    </body>
+</html

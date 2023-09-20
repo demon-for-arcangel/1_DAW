@@ -1,0 +1,92 @@
+footer{
+    position: fixed;
+    background-color: #4F23A2;
+    height: 5.5rem;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 28px;
+    padding-right: 700px;
+}
+
+.img-left{
+    position: relative;
+    margin-left: 55px;
+    bottom: 50px;
+    top: 150px;
+    display: inline-block;
+}
+
+.img-center{
+    position: relative;
+    left: 350px;
+    top: 150px;
+    bottom: 65px;
+    display: inline-block;
+}
+
+.img-right{
+    position: relative;
+    left: 700px;
+    top: 150px;
+    margin-right: -55;
+    display: inline-block;
+}
+
+.button-center{
+    position: absolute;
+    background-color: #00A5B3;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    left: 30px;
+    width: 150px;
+    height: 45px;
+}
+
+.descrip-center1{
+    position: relative;
+    left: 3px;
+}
+
+.descrip-center2{
+    position: relative;
+    left: 35px;
+}
+
+.descrip-center3{
+    position: relative;
+    left: 40px;
+}
+
+.precio-center{
+    position: relative;
+    left: 85px;
+}
+
+#redes{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 40px;
+    top: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #00A5B3;
+    border-width: 3px;
+}
+
+.insta{
+    padding-left: 15px;
+}
+
+.twitter{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.face{
+    padding-right: 15px;
+}

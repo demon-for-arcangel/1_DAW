@@ -1,0 +1,39 @@
+body{
+    font-size: 33px;
+}
+
+.imagen{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.formulario{
+    position:absolute;
+    top: 200px;
+    left: 560px;
+}
+
+.estilo{
+    position: absolute;
+    background-color: #00A5B3;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    width: 170px;
+    height: 45px;
+    left: 20px;
+    bottom: 0px;
+}
+
+.crear-cuenta{
+    position: absolute;
+    background-color: #00A5B3;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    width: 170px;
+    height: 45px;
+    left: 250px;
+    bottom: 0px;
+}
