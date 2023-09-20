@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <form action = "control_form.php" method = "get">
+            <fieldset>
+                <legend>MIS DATOS</legend>
+                <ol>
+                    <li>Nombre<input type = "text" name = "nombre" placeholder = "Escriba aquí su nombre"/></li>
+                    <li>Correo electrónico<input type = "text" name = "correo" placeholder = "ejemplo@dominio.com"/></li>
+                    <li>Teléfono<input type = "text" name = "tlf" placeholder = "ej. +34984530203"/></li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Dirección</legend>
+                <ol>
+                    <li>Dirección:<textarea rows = "6" cols = "25"></textarea></li>
+                    <li>Código postal:<input type = "text" name = "CP" placeholder = "CP"/></li>
+                    <li>Ciudad:<input type = "text" name = "ciudad" placeholder = "Ciudad"/></li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>Forma de pago</legend>
+                <ol>
+                    <li>
+                        <fieldset>
+                            <legend>Tarjetas de crédito</legend>
+                            <ul>
+                                <li><input type = "checkbox" name = "visa"/>VISA</li>
+                                <li><input type = "checkbox" name = "american express"/>American Express</li>
+                                <li><input type = "checkbox" name = "master card"/>Master Card</li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                    <li>Número tarjeta<input type = "text" name = "numero tarjeta" placeholder = "Número tarjeta"/></li>
+                    <li>Código seguridad<input type = "text" name = "codigo seguridad" placeholder = "Código seguridad"/></li>
+                    <li>Nombre tarjeta<input type = "text" name = " nombre tarjeta" placeholder = "Nombre exacto tarjeta"/></li>
+                </ol>
+            </fieldset>
+        </form>
+    </body>
+</html>
