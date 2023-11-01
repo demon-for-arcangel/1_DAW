@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examenzombie.ConsultaZombieController">
+   <children>
+      <TableView fx:id="tablaZombies" layoutX="53.0" layoutY="55.0" prefHeight="238.0" prefWidth="478.0">
+        <columns>
+          <TableColumn fx:id="NombreColumn" prefWidth="114.0" text="Nombre" />
+          <TableColumn fx:id="MovilidadColumn" prefWidth="117.0" text="Movilidad" />
+            <TableColumn fx:id="AgresividadColumn" prefWidth="107.0" text="Agresividad" />
+            <TableColumn fx:id="MaximoColumn" prefWidth="139.0" text="Máximo Disparos" />
+        </columns>
+      </TableView>
+      <Button layoutX="472.0" layoutY="332.0" mnemonicParsing="false" onDragDetected="#onbtnAtras" prefHeight="26.0" prefWidth="58.0" text="Atrás" />
+   </children>
+</AnchorPane>

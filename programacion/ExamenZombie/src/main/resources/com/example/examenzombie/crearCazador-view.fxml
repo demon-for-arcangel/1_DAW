@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examenzombie.CrearCazadorController">
+   <children>
+      <Label layoutX="95.0" layoutY="93.0" text="Nombre:" />
+      <Label fx:id="lblNombre" layoutX="166.0" layoutY="93.0" text="                                                  " />
+      <Label layoutX="99.0" layoutY="147.0" text="Armas: " />
+      <ComboBox fx:id="cbArmas" layoutX="157.0" layoutY="143.0" prefWidth="150.0" />
+      <Label layoutX="94.0" layoutY="200.0" text="Apellido: " />
+      <TextField fx:id="txtApellido" layoutX="158.0" layoutY="196.0" />
+      <Button fx:id="btnCrearCazador" layoutX="256.0" layoutY="276.0" mnemonicParsing="false" onAction="#onbtnCrearCazador" text="Crear Cazador" />
+      <Button fx:id="btnCancelar" layoutX="180.0" layoutY="276.0" mnemonicParsing="false" text="Cancelar" />
+   </children>
+</AnchorPane>
