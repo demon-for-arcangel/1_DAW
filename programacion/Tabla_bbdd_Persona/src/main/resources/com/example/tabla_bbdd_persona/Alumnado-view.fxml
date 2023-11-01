@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane accessibleHelp="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabla_bbdd_persona.AlumnadoController">
+   <children>
+      <TableView fx:id="tablaAlumno" layoutX="11.0" layoutY="36.0" prefHeight="231.0" prefWidth="593.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="colNombre" prefWidth="123.0" text="Nombre" />
+          <TableColumn fx:id="colEdad" prefWidth="67.0" text="Edad" />
+            <TableColumn fx:id="colFecha" prefWidth="132.0" text="Fecha Nacimiento" />
+            <TableColumn fx:id="colMatriculado" prefWidth="100.0" text="Matriculado" />
+            <TableColumn fx:id="colFechaString" prefWidth="94.0" text="Fecha_String" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEliminar" layoutX="88.0" layoutY="288.0" mnemonicParsing="false" onAction="#btnEliminarPulsado" text="Eliminar" />
+      <Button layoutX="174.0" layoutY="288.0" mnemonicParsing="false" text="Alta" />
+      <Button layoutX="237.0" layoutY="288.0" mnemonicParsing="false" onAction="#pulsadoVer" text="Ver" />
+   </children>
+</Pane>

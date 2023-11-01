@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="318.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabla_bbdd_persona.AniadirView">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="216.0" layoutX="32.0" layoutY="40.0" opacity="0.33" stroke="BLACK" strokeType="INSIDE" width="505.0" />
+      <Label layoutX="71.0" layoutY="45.0" text="Id" />
+      <Label layoutX="71.0" layoutY="90.0" text="Nombre" />
+      <Label layoutX="71.0" layoutY="135.0" text="Edad" />
+      <Label layoutX="71.0" layoutY="180.0" text="Fecha Nacimiento" />
+      <CheckBox layoutX="184.0" layoutY="225.0" mnemonicParsing="false" text="Matriculado" />
+      <TextField layoutX="184.0" layoutY="45.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField layoutX="184.0" layoutY="90.0" prefHeight="25.0" prefWidth="331.0" />
+      <Spinner layoutX="184.0" layoutY="135.0" prefHeight="25.0" prefWidth="71.0" />
+      <DatePicker layoutX="184.0" layoutY="180.0" prefHeight="25.0" prefWidth="133.0" />
+      <Button layoutX="114.0" layoutY="276.0" mnemonicParsing="false" text="Aceptar" />
+      <Button layoutX="45.0" layoutY="276.0" mnemonicParsing="false" text="Nuevo" />
+      <Button layoutX="184.0" layoutY="276.0" mnemonicParsing="false" text="Salir" />
+   </children>
+</AnchorPane>
