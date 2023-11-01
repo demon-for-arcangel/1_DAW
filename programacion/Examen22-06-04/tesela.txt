@@ -1,0 +1,2 @@
+TeselaReal --> Tesela(id = '902', material='Mármol', color='Rojo', ancho=20, largo=11, colocacion='Izquierda')
+Estado de conservacion: Bueno

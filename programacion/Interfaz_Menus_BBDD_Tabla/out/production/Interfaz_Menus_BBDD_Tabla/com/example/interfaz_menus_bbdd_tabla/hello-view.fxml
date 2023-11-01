@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfaz_menus_bbdd_tabla.HelloController">
+   <children>
+      <MenuBar layoutX="14.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="muTabla" mnemonicParsing="false" onAction="#RellenarTabla" text="Rellenar Tabla" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView layoutX="92.0" layoutY="83.0" prefHeight="235.0" prefWidth="416.0">
+        <columns>
+          <TableColumn prefWidth="119.20001220703125" text="Descripción" />
+          <TableColumn prefWidth="91.20001220703125" text="Nombre" />
+            <TableColumn prefWidth="101.39996337890625" text="Cantidad" />
+            <TableColumn prefWidth="102.60000610351562" text="Precio" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
