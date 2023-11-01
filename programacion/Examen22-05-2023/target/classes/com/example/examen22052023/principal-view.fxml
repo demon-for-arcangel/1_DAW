@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen22052023.PrincipalController">
+   <children>
+      <MenuBar layoutX="1.0" layoutY="3.0">
+        <menus>
+          <Menu fx:id="Usuario" mnemonicParsing="false" text="Usuario">
+            <items>
+              <MenuItem fx:id="CrearFichero2" mnemonicParsing="false" onAction="#onCrearFicheroPulsado" text="Crear Fichero" />
+                  <MenuItem fx:id="InsertarBBDD" mnemonicParsing="false" onAction="#onInsertarBBDDPulsado" text="Insertar BBDD" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ciudades">
+            <items>
+              <MenuItem fx:id="CrearFichero" mnemonicParsing="false" onAction="#onCrearFicheroPulsado" text="Crear Fichero" />
+                  <MenuItem fx:id="InsertarBBDD2" mnemonicParsing="false" onAction="#onInsertarBBDDPulsado" text="Insertar BBDD" />
+            </items>
+          </Menu>
+          <Menu fx:id="Viaje" mnemonicParsing="false" text="Viaje">
+            <items>
+              <MenuItem fx:id="Tabla" mnemonicParsing="false" onAction="#onTablaPulsado" text="Tabla" />
+                  <MenuItem fx:id="Nuevo" mnemonicParsing="false" onAction="#onNuevoPulsado" text="Nuevo" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="261.0" layoutX="30.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="539.0" />
+      <Label layoutX="68.0" layoutY="126.0" text="Nombre: " />
+      <Label layoutX="129.0" layoutY="126.0" text=" " />
+   </children>
+</Pane>
