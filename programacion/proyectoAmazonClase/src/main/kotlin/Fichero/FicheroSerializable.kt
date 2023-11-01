@@ -1,0 +1,4 @@
+package Fichero
+
+class FicheroSerializable {
+}
