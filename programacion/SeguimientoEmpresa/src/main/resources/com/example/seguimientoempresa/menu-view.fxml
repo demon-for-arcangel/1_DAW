@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimientoempresa.MenuController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="377.0" layoutX="14.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="571.0">
+         <fill>
+            <LinearGradient endX="0.46919431279620855" endY="0.9052132701421801" startX="0.2132701421800948">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.018518518656492233" green="0.2311728447675705" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="177.0" layoutY="32.0" text="Tipos de Test">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="95.0" text="En esta página encontraremos los distintos test disponibles en la aplicación.">
+         <font>
+            <Font name="Arial Narrow" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxTest" layoutX="224.0" layoutY="161.0" onAction="#oncomboBoxTest" prefWidth="150.0" promptText="Test">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Evalua a tu equipo" />
+               <String fx:value="Evalua el liderazgo de tu jefe" />
+               <String fx:value="Evalua tu estado anímico del día" />
+               <String fx:value="Evalua tu estado de satisfacción en la empresa" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+   </children>
+</Pane>

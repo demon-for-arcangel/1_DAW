@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seguimientoempresa.AltaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="378.0" layoutX="16.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="564.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15039999783039093" green="0.5846800208091736" blue="0.9399999976158142" opacity="0.805343508720398" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="180.0" layoutY="34.0" prefHeight="42.0" prefWidth="241.0" text="Date de Alta">
+         <font>
+            <Font name="Bodoni MT Black" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="105.0" text="Nombre:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="148.0" text="Primer Apellido: ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="192.0" text="Segundo Apellido: ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="239.0" text="Fecha de Nacimiento:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="286.0" text="Número Personal: ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNombre" layoutX="243.0" layoutY="101.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField fx:id="textPrimerApellido" layoutX="243.0" layoutY="144.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField fx:id="textSegundoApellido" layoutX="243.0" layoutY="188.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField fx:id="textNumeroPersonal" layoutX="243.0" layoutY="282.0" prefHeight="25.0" prefWidth="220.0" />
+      <Button fx:id="btnRegistrarse" layoutX="463.0" layoutY="340.0" mnemonicParsing="false" onAction="#onbtnRegistrarse" text="Registrarse" />
+      <DatePicker fx:id="FechaNacimiento" layoutX="243.0" layoutY="235.0" prefHeight="25.0" prefWidth="220.0" />
+      <Button fx:id="btnSalir" layoutX="387.0" layoutY="340.0" mnemonicParsing="false" onAction="#onbtnSalir" prefHeight="25.0" prefWidth="66.0" text="Salir" />
+   </children>
+</Pane>
